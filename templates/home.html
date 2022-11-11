@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div class="login">
+            <h1>Petrol Price Prediction</h1>
+            <form action="{{url_for('predict')}}" method="post">
+                <label>Date</label>
+                <input type="text" name="Date" placeholder="Date" required="yes"/>
+                <br><br>
+                <label>Month</label>
+                <input type="text" name="Month" placeholder="Month" required="yes"/>
+                <br><br>
+                <label>Year</label>
+                <input type="text" name="Year" placeholder="Year" required="yes"/>
+                <br><br>
+                <button type="submit" class="btn btn-primary">Predict</button>
+            </form>
+            {{prediction_text}}
+        </div>
+    </body>
+</html>
